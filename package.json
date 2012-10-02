@@ -1,6 +1,6 @@
 {
   "name": "insert-list",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimal list UI that is a writable Stream and supports sorting by predefined keys",
   "author": "Julian Gruber <julian@juliangruber.com>",
   "dependencies": {
