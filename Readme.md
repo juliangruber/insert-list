@@ -1,7 +1,7 @@
 
 # insert-list
 
-List UI that that is a writable Stream and supports sorting by predefined keys.
+Minimal list UI that is a writable Stream and supports sorting by predefined keys.
 
 ## Usage
 
@@ -19,6 +19,14 @@ list.emit('data', { data: 'historical 3', position: 3 });
 ```
 
 The stream can be used before the dom is ready and will automatically insert its UI when it is.
+
+## Installation
+
+```bash
+$ component install juliangruber/insert-list
+# or
+$ npm install insert-list
+```
 
 ## Api
 
