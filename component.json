@@ -1,7 +1,7 @@
 {
   "name": "insert-list",
   "repo": "juliangruber/insert-list",
-  "description": "List UI that that is a writable Stream and supports sorting by predefined keys",
+  "description": "Minimal list UI that is a writable Stream and supports sorting by predefined keys",
   "version": "0.0.1",
   "keywords": ["list", "sort", "ui", "stream"],
   "dependencies": {
