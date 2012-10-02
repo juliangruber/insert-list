@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="../build/build.js"></script>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    <link rel="stylesheet" href="../build/build.css" />
+    <script>
+      var $ = require('component-jquery');
+      var List = require('insert-list');
+      var Stream = require('juliangruber-stream');
+
+      var list = List({el: '#node', sortBy: 'time.ts'});
+
+      createStream().pipe(list);
+
+      function createStream() {
+        var s = new Stream;
+        s.readable = true;
+        var count = 0;
+        var iv = setInterval(function() {
+          var rnd = Math.floor(Math.random()*1000000);
+          s.emit('data', {data: rnd, time:{ts: rnd}});
+          if (++count == 5) clearInterval(iv);
+        }, 1000);
+        return s;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="node"></div>
+  </body>
+</html>
