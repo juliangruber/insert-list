@@ -1,3 +1,4 @@
+# - DEPRECATED - Use [substack/sorta](https://github.com/substack/sorta)
 
 # insert-list
 
